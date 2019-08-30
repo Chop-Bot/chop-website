@@ -1,0 +1,10 @@
+.no-select {
+  user-select: none !important;
+}
+
+.flex-center {
+  display: flex !important;
+  flex-flow: column wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

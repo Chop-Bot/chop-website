@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="Description"
+      content="Chop Bot is a Tera Online related Discord bot. It can send automatic notifications on server status change."
+    />
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chop Bot</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/chop.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar rofl -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Chop Bot</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Commands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/coffeechop/chop" rel="noopener" target="_blank">Github</a>
+          </li>
+        </ul>
+        <a
+          class="btn btn-primary my-2 my-sm-0 mr-2 text-white"
+          href="https://bit.ly/2ZE36wn"
+          rel="noopener"
+          target="_blank"
+          >Invite Chop</a
+        >
+        <a class="btn btn-outline-light my-2 my-sm-0 text-light">Dashboard</a>
+      </div>
+    </nav>
+
+    <!-- The big main landing thing -->
+    <div class="container-fluid main">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col d-flex justify-content-center mt-3">
+            <div class="diamond-container">
+              <div class="diamond text-primary my-5 no-select flex-center">
+                <h1 class="display-4">Chop</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col d-flex justify-content-center">
+            <blockquote class="blockquote my-2 text-center">
+              <p class="mb-0">
+                <strong>Chop Bot</strong> is a
+                <a href="http://tera.enmasse.com" rel="noopener" target="_blank">Tera Online</a> related Discord bot. It
+                can send automatic notifications on server status change.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <a type="button" class="btn btn-primary btn-lg" href="https://bit.ly/2ZE36wn" rel="noopener" target="_blank"
+              >Invite Chop</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="container-fluid bg-dark" style="height: 2rem"></div>
+
+    <!-- The rest -->
+    <div class="container my-3">
+      <!-- Features xD -->
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="display-4" id="features">Features</h1>
+          <div class="row my-4">
+            <div class="col-sm-12 col-md-4 my-3">
+              <div class="card" style="height: 26rem">
+                <img src="./images/status.png" alt="Status feature" class="card-img-top" style="height: 16rem" />
+                <div class="card-body">
+                  <h5 class="card-title text-info">
+                    Status Change Notifications
+                  </h5>
+                  <div class="card-text">
+                    Chop can notify you whenever Tera servers go up and down.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 my-3">
+              <div class="card" style="height: 26rem">
+                <img src="./images/news.png" alt="Tera news feature" class="card-img-top" style="height: 16rem" />
+                <div class="card-body">
+                  <h5 class="card-title text-info">
+                    Tera News Notifications
+                  </h5>
+                  <div class="card-text">
+                    Chop can keep you up to date with the latest Tera news.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 my-3">
+              <div class="card" style="height: 26rem">
+                <img
+                  src="./images/coffee.png"
+                  alt="Chop's profile picture"
+                  class="card-img-top"
+                  style="height: 16rem"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-info">
+                    Coffee
+                  </h5>
+                  <div class="card-text">
+                    Never experience a coffee shortage ever again, Chop is packed full of delicious coffee.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS LMAO -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

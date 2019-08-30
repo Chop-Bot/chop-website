@@ -1,0 +1,20 @@
+{
+  "short_name": "Chop",
+  "name": "Chop Bot",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/images/icon.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/images/icon.ico",
+      "type": "image/x-icon",
+      "sizes": "256x256"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#d3d3d3",
+  "theme_color": "#d48b2f"
+}
