@@ -94,3 +94,5 @@ typings/
 
 # Dist
 dist
+# Local Netlify folder
+.netlify
