@@ -40,7 +40,7 @@
             <a class="nav-link" href="#features">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled no-select">Commands</a>
+            <a class="nav-link cursor-pointer" data-toggle="modal" data-target="#commands-modal">Commands</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/coffeechop/chop" rel="noopener" target="_blank">Github</a>
@@ -53,7 +53,7 @@
           target="_blank"
           >Invite Chop</a
         >
-        <a class="btn btn-outline-light my-2 my-sm-0 text-light disabled">Dashboard</a>
+        <a class="btn btn-outline-light my-2 my-sm-0 text-light disabled cursor-not-allowed">Dashboard</a>
       </div>
     </nav>
 
@@ -102,7 +102,12 @@
           <div class="row my-4">
             <div class="col-sm-12 col-md-4 my-3">
               <div class="card" style="height: 26rem">
-                <img src="./images/status.png" alt="Status feature" class="card-img-top" style="height: 16rem; object-fit: cover" />
+                <img
+                  src="./images/status.png"
+                  alt="Status feature"
+                  class="card-img-top"
+                  style="height: 16rem; object-fit: cover"
+                />
                 <div class="card-body">
                   <h5 class="card-title text-info">
                     Status Change Notifications
@@ -115,7 +120,12 @@
             </div>
             <div class="col-sm-12 col-md-4 my-3">
               <div class="card" style="height: 26rem">
-                <img src="./images/news.png" alt="Tera news feature" class="card-img-top" style="height: 16rem; object-fit: cover; object-position: 0 0" />
+                <img
+                  src="./images/news.png"
+                  alt="Tera news feature"
+                  class="card-img-top"
+                  style="height: 16rem; object-fit: cover; object-position: 0 0"
+                />
                 <div class="card-body">
                   <h5 class="card-title text-info">
                     Tera News Notifications
@@ -144,6 +154,34 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Commands Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="commands-modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Chop Commands</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body px-0 px-lg-2">
+            <table class="table table-striped table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Category</th>
+                  <th scope="col" class="d-none d-sm-table-cell">Arguments</th>
+                </tr>
+              </thead>
+              <tbody id="command-list"></tbody>
+            </table>
+            <div class="loading"></div>
           </div>
         </div>
       </div>

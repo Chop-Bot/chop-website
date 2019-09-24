@@ -2,6 +2,14 @@
   user-select: none !important;
 }
 
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
 .flex-center {
   display: flex !important;
   flex-flow: column wrap !important;

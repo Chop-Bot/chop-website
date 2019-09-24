@@ -32,6 +32,13 @@ body {
   transform: scale(1.2) translateX(1rem) rotate(20deg);
 }
 
+.loading {
+  background-image: url('../images/loading.svg');
+  width: 16rem;
+  height: 16rem;
+  margin: auto;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
